@@ -30,7 +30,7 @@ $(document).ready(function() {
         $('#message').val('')
     })   
 
-    //Add new comment
+    //valida form
     $('#formScheduling').validate({
         rules: {
             fullname: "required",
@@ -65,7 +65,9 @@ $(document).ready(function() {
             scrollTop: destination.offset().top
         }, 1000)
     })
+        
 
+    //cria novo item carousel 
     function addComment(name, message) {
         //Creat a new car
         const newComment = $('<div class="card"></div>')
