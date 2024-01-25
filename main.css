@@ -1,0 +1,234 @@
+:root {
+    --orange: #E46D18;
+    --black: #121212;
+    --btn: #0ba500;
+    --card: #242424;
+    --yellow: #f6bb06;
+}
+
+main,
+footer {
+    font-family: 'Public Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.88) ;
+    color: #fff;
+}
+
+.special-font{
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+.special-color-text {
+    color: var(--orange);
+}
+
+.color-yellow {
+    color: var(--yellow)
+}
+
+#header {
+    background-color: var(--black);
+    z-index: 1000;
+}
+
+#header h1 {
+    font-style: italic;
+}
+
+#header h1,
+#header a,
+h2, h3, h4,
+.btn,
+#service .btn,
+#comment .btn,
+#contact .btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#header img {
+    height: 50px;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+#header .active {
+    background-color: var(--yellow);
+}
+
+#header button {
+    background-color: #fff;
+    padding: 3px;
+}
+
+#home,
+#about,
+#service,
+#comment,
+#contact {
+    padding-top: 50px;
+}
+
+.carousel-item img{
+    height: 400px;
+}
+
+#about img {
+    height: 100%;
+    max-width: 700px;
+    width: 100%;
+}
+
+#service .card {
+    height: 590px;
+    height: 100%;
+}
+
+#service .card-body,
+#service .card-footer {
+    background-color: var(--black);
+}
+
+#service .card-body {
+    position: relative;
+}
+
+.price {
+    position: absolute;
+    bottom: 0;
+}
+
+#service img{
+    height: 240px;
+}
+
+/*This line code add color btn */
+#service .btn,
+#comment .btn {
+    background-color: var(--orange);
+}
+
+#comment div.card,
+#formComment {
+    width: 70%;
+    margin: auto;
+}
+
+#name,
+#message,
+#fullname,
+#formService,
+#date {
+    background-color: var(--card);
+    color: #fff;
+}
+
+#name:focus,
+#message:focus,
+#fullname:focus,
+#formService:focus,
+#date:focus {
+    outline:  3px solid var(--btn); 
+    box-shadow: none;
+}
+
+#contact .btn {
+    background-color: #0ba500;
+}
+
+#footer {
+    border-top: 3px solid #7e7c7c30;
+}
+
+@media screen and (max-width: 767px) {
+    #header img {
+        height: 40px;
+    }
+
+    #header h1 {
+        font-size: 1.4rem;
+    }
+
+    .carousel-item img{
+        height: 250px;
+    }
+
+    #home,
+    #about,
+    #service,
+    #comment,
+    #contact {
+        padding-top: 3px;
+        margin: 0;
+    }
+
+    #about .row > div,
+    #contact .col-4 {
+        margin-top: 30px;
+    }
+
+    #service .row .col-4 { 
+        max-width: 400px;
+        row-gap: 20px;
+    } 
+
+    #about .row div, 
+    #service .row .col-4, 
+    #comment div.card,
+    #contact .row div{
+        width: 100%;
+    }
+
+    #comment .p-3{
+        margin: 0;
+    }
+
+    #comment .card-body{
+        padding-top: 0;
+        font-size: 1rem;
+    }
+
+    #formComment,
+    #name,
+    #message,
+    #fullname,
+    #formService,
+    #date {
+        max-width: 500px;
+        width: 100%;
+    }
+    
+    #formComment,
+    #service .col-4, 
+    #comment div.card,
+    #contact .row {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {  
+    #about .row div {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #formComment,
+    #service .col-4, 
+    #contact .row{
+        margin: auto;
+    }
+
+    #service .row .col-4 {
+        width: 50%;
+    }
+
+    #comment div.card {
+        width: 80%;
+    }
+
+    #contact .col-4 h2 {
+        font-size: 1.5rem;
+    }
+}
