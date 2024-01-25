@@ -195,9 +195,9 @@
             </div>
         </section>
         <section id="comment">
-            <div class="container carousel slide" data-bs-ride="carousel">
+            <div class="container carousel slide" data-bs-ride="carousel" id="commentCarousel">
                 <h2 class="my-5 text-center">Oque Nossos <span class="special-color-text">Clientes fala</span> sobre nosso serviços</h2>
-                <div class="carousel-inner   text-center" data-bs-theme="dark">
+                <div class="carousel-inner   text-center" data-bs-theme="dark" >
                     <div class="carousel-item  active" data-bs-interval="3000">
                         <div class="card">
                             <h4 class="p-3 color-yellow">Tomas</h4>
@@ -228,11 +228,11 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#comment" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#commentCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#comment" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#commentCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -256,15 +256,19 @@
                 <div class="row">
                     <div class="col-7">
                         <h2 class=" mb-4">Faça já sua <span class="special-color-text">reservar</span></h2>
-                        <form data-bs-theme="dark">
+                        <form data-bs-theme="dark" id="formScheduling">
                             <label class="form-label" for="fullname">Seu nome completo</label>
                             <input class="form-control mb-3" type="text" name="fullname" id="fullname" required />
-                            <label class="form-label" for="fullname">Seu Telefone</label>
-                            <input class="form-control mb-3" type="tel" name="tel" id="tel" required />
+
+                            <label class="form-label" for="tel">Seu Telefone</label>
+                            <input class="form-control mb-3" type="text" name="tel" id="tel" required />
+
                             <label class="form-label" for="formService">Serviço Desejado</label>
                             <input class="form-control mb-3" type="text" name="formService" id="formService" required />
+
                             <label class="form-label" for="date">Data</label>
                             <input class="form-control mb-3" type="date" name="date" id="date" required />
+                            
                             <button class="btn " type="submit">Confirmar Agendamento</button>
                         </form>
                     </div>

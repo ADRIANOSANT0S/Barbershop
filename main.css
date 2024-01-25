@@ -117,6 +117,7 @@ h2, h3, h4,
 }
 
 #name,
+#tel,
 #message,
 #fullname,
 #formService,
@@ -126,6 +127,7 @@ h2, h3, h4,
 }
 
 #name:focus,
+#tel:focus,
 #message:focus,
 #fullname:focus,
 #formService:focus,
