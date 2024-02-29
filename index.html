@@ -15,50 +15,61 @@
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
 </head>
 <body>
-    <header class="py-2 position-sticky  top-0 start-0" id="header">
-        <div class="navbar navbar-expand-lg">
-            <div class="container">
-                <div class="d-flex align-items-center">
-                    <img src="img/logo.jpg" title="Logo QLD Barbershop" alt="Logo QLD Barbershop">
-                    <h1 class="special-font ms-2"><span class="special-color-text">QLD</span> Barbershop</h1>
-                </div>
-                <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="collapse navbar-collapse justify-content-end " id="menu">
-                    <ul class="nav navbar-nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active"  href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  href="#about">Sobre Nos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  href="#service">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  href="#comment">Avaliações</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  href="#contact">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
+    <header class="py-2 sticky-top  navbar navbar-expand-lg" id="header">
+        <div class="container">
+            <div class="d-flex align-items-center navbar-brand">
+                <img src="img/logo.jpg" title="Logo QLD Barbershop" alt="Logo QLD Barbershop">
+                <h1 class="special-font ms-2"><span class="special-color-text">QLD</span> Barbershop</h1>
             </div>
+            <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end " id="menu">
+                <ul class="nav nav-pills gap-3m d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link active"  href="#home">Home</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link"  href="#about">Sobre Nos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link"  href="#service">Serviços</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link"  href="#comment">Avaliações</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link"  href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main data-bs-spy="scroll" data-bs-target="#header">
-        <section id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <main data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true">
+        <section id="home">
             <div class="container">
-                <div class="carousel-inner">
-                    <div data-bs-interval="3000" class="carousel-item active">
-                        <img class="d-block w-100" src="./img/slide-1.webp" alt="Barbearia">
+                <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="./img/slide1.jpg" alt="Barbearia">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="./img/slide-2.webp" alt="Equipamento de cortar cabelo">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="./img/slide-3.jpg" alt="Área de lazer com mesa de bilhar">
+                        </div>
                     </div>
-                    <div data-bs-interval="3000" class="carousel-item">
-                        <img class="d-block w-100" src="./img/slide-2.webp" alt="Equipamento de cortar cabelo">
-                    </div>
-                    <div data-bs-interval="3000" class="carousel-item">
-                        <img class="d-block w-100" src="./img/slide-3.jpg" alt="Área de lazer com mesa de bilhar">
+                    <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" class="active"  data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                     </div>
                 </div>
             </div>
